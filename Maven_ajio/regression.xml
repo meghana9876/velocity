@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_ajio" thread-count="1" parallel="tests">
+ 
+  <test  name="chromeTest">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     <class name="test.TestNG2"/>
+      <class name="test.TestNG1_homepage"/>
+     
+     </classes>
+     
+  </test> <!-- Test_ajio -->
+
+  <test name="EdgeTest">
+  <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="test.TestNG2"/>
+      <class name="test.TestNG1_homepage"/>
+     </classes>
+  </test> <!-- Test_ajio -->
+   
+</suite> <!-- Suite_ajio -->
